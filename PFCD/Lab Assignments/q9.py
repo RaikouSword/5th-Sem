@@ -1,0 +1,1 @@
+print("Hi we are studying \"python\". \\n I hope you all are doing well \nWe are going to have a great time!")
