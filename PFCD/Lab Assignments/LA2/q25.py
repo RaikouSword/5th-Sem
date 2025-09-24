@@ -10,5 +10,5 @@
 # for x in range(5,0,-1):
 #     print('*'* x)
 
-for x in range(5):
-    print('a'*x+"*"*(5-x)+'b'*x)
+# for x in range(5):
+#     print(' '*x+"* "*(5-x)+' '*x)
