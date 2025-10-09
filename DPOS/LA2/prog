@@ -1,0 +1,2 @@
+sort -n a.txt b.txt c.txt > result
+cat result

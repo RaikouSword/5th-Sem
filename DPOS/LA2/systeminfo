@@ -1,0 +1,6 @@
+echo -e "Logname:\t $LOGNAME"
+echo -e "Name of the UNIX System: \t `uname`"
+echo -e "Type of the Shell: \t $SHELL"
+echo -e "Path of the current working directory: \t $PWD"
+echo -e "All files in current working directory: \t `ls`"
+ 
