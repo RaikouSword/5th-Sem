@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+void insert_ele_in_array(int arr[],int n,int new ,int pos){
+    for(int x=n-1;x>=pos-1;x--){
+        arr[x+1] =arr[x];
+    }
+
+    arr[pos-1] = new;
+    n++;
+}
+
 int main(){
     int n, pos, new;
     int arr[100];
@@ -30,14 +39,7 @@ int main(){
         printf("\nInvalid Position");
         return(1);
     }
-
-    for(int x=n-1;x>=pos-1;x--){
-        arr[x+1] =arr[x];
-    }
-
-    arr[pos-1] = new;
-    n++;
-
+    insert_ele_in_array(arr,n,new,pos);
     printf("\nArray is:");
     for(int x=0;x<n;x++){
         printf("%4d",arr[x]);

@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main(){
-    int n;
-    printf("Enter the size of the array:");
-    scanf("%d",&n);
-    int arr[n];
-    for(int x=0;x<n;x++){
-        scanf("%d",&arr[x]);
-    }
+void smol_and_ssmol(int arr[],int n){
     int smol=INT_MAX,ssmol=INT_MAX;
     for(int x=0;x<n;x++){
         if(arr[x]<=smol){
@@ -21,5 +14,16 @@ int main(){
         }
     }
     printf("The smallest value is %d and second smallest is %d", smol, ssmol);
+}
+
+int main(){
+    int n;
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+    int arr[n];
+    for(int x=0;x<n;x++){
+        scanf("%d",&arr[x]);
+    }
+    smol_and_ssmol(arr,n);
     return 0;
 }

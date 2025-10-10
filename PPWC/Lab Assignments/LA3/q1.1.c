@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main(){
-    int n;
-    printf("Enter the size of the array:");
-    scanf("%d",&n);
-    int arr[n];
-    for(int x=0;x<n;x++){
-        scanf("%d",&arr[x]);
-    }
+void larg_and_slarg(int arr[],int n){
     int larg=INT_MIN,slarg=INT_MIN;
     for(int x=0;x<n;x++){
         if(arr[x]>larg){
@@ -20,6 +13,18 @@ int main(){
             continue;
         }
     }
-    printf("The largest value is %d and second largest is %d", larg, slarg);
+    printf("The largest value is %d and second largest are %d", larg,slarg);
+}
+
+int main(){
+    int n;
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+    int arr[n];
+    for(int x=0;x<n;x++){
+        scanf("%d",&arr[x]);
+    }
+    larg_and_slarg(arr,n);
+
     return 0;
 }

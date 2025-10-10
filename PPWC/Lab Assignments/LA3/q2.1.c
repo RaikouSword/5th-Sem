@@ -1,5 +1,23 @@
 #include <stdio.h>
 
+void separate_oddEven(int arr[],int n ){
+    int p1=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0){
+            p1=i;
+            break;
+        }
+    }
+    for(int j=p1;j<n;j++){
+        if(arr[j]%2==1){
+            int temp = arr[p1];
+            arr[p1] = arr[j];
+            arr[j] = temp;
+            p1++;
+        }
+    }
+}
+
 int main(){
     int n;
     scanf("%d",&n);
@@ -7,23 +25,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&v[i]);
     }
-
-    int p1=0;
-    for(int i=0;i<n;i++){
-        if(v[i]%2==0){
-            p1=i;
-            break;
-        }
-    }
-    for(int j=p1;j<n;j++){
-        if(v[j]%2==1){
-            int temp = v[p1];
-            v[p1] = v[j];
-            v[j] = temp;
-            p1++;
-        }
-    }
-
+    separate_oddEven(v,n);
     for(int i=0;i<n;i++){
         printf("%d ",v[i]);
     }

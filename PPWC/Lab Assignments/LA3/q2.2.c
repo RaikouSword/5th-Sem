@@ -1,16 +1,6 @@
 #include<stdio.h>
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    int v[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&v[i]);
-    }
-
-    int x;
-    scanf("%d",&x);
-
+void insert_ele_in_sorted_array(int v[],int n,int x){
     int pos= n-1;
     for (int i=0;i<n;i++){
         if(x<=v[i]){
@@ -29,7 +19,19 @@ int main(){
         v[pos]=x;
         n++;
     }
-    
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int v[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&v[i]);
+    }
+
+    int x;
+    scanf("%d",&x);
+    insert_ele_in_sorted_array(v,n,x);
     for(int i=0;i<n;i++){
         printf("%d ",v[i]);
     }

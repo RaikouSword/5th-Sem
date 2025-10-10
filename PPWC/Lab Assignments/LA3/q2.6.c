@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+void reverse(int arr[],int n){
+    int low=0,high=n-1;
+    while(low<=high){
+        int temp = arr[high];
+        arr[high] = arr[low];
+        arr[low] = temp;
+        high--;
+        low++;
+    }
+}
+
 int main(){ 
     int n;
     printf("Enter the size of the array: ");
@@ -13,14 +24,7 @@ int main(){
     for(int x=0;x<n;x++){
         printf("%d ",arr[x]);
     }
-    int low=0,high=n-1;
-    while(low<=high){
-        int temp = arr[high];
-        arr[high] = arr[low];
-        arr[low] = temp;
-        high--;
-        low++;
-    }
+    reverse(arr,n);
     printf("\nArray is:");
     for(int x=0;x<n;x++){
         printf("%d ",arr[x]);
