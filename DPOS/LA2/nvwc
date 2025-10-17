@@ -1,0 +1,4 @@
+echo -e "Filename:\t dtcl"
+echo -e "LineCount:\t `wc -l<dtcl`"
+echo -e "WordCount:\t `wc -w<dtcl`"
+echo -e "CharCount:\t `wc -c<dtcl`"

@@ -1,0 +1,3 @@
+echo -e "First $1 lines: `head -$1 $3`"
+echo -e "Last $2 lines: `tail -$2 $3`"
+echo -e "Filename: $3"

@@ -1,0 +1,2 @@
+echo -e "Date\t:\t`date`"
+echo -e "Calender:\t `cal`"

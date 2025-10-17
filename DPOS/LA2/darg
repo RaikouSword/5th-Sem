@@ -1,0 +1,5 @@
+echo "Total no of arguements: $#"
+echo "1st arguement: $1"
+echo "2nd arguement: $2"
+#echo "$0 $2 $9 $10"
+echo "$*"
