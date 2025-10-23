@@ -1,0 +1,7 @@
+echo -e "Enter two num:"
+read a
+read b
+echo "Add: $a + $b = `expr $a + $b`"
+echo "Subtract: $a - $b = `expr $a - $b`"
+echo "Multiply: $a * $b = `expr $a \* $b`"
+echo "Divison: $a / $b = `expr $a \/ $b`"

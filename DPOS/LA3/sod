@@ -1,0 +1,10 @@
+read n
+d1 = expr $n % 10000
+expr $n \/ 10
+d2 = expr $n % 1000
+expr $n \/ 10
+d3= expr $n % 100
+expr $n \/ 10
+d4 = expr $n % 10
+expr $n \/ 10
+echo "$(d1+d2+d3+d4+d"

@@ -1,0 +1,6 @@
+read a
+read b
+echo "$a + $b = `echo "scale=3;$a + $b"|bc -l`"
+echo "$a - $b = `echo "scale=3;$a - $b"|bc -l`"
+echo "$a * $b = `echo "scale=3;$a * $b"|bc -l`"
+echo "$a / $b = `echo "scale=3;$a / $b"|bc -l`"

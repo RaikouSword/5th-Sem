@@ -1,0 +1,11 @@
+echo -e "Enter 3 numbers: "
+read a b c
+if [ $a -gt $b -a $a -gt $c ]
+then 
+echo "big=$a"
+elif [ $b -gt $a -a $b -gt $c ]
+then 
+echo "big=$b"
+else
+echo "big=$c"
+fi
