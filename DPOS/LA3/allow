@@ -1,0 +1,7 @@
+echo "Enter marks and percentage in attendance: "
+read m pa
+if [ $m -ge 20 -a $pa -ge 75 ]; then
+	echo "Allowed!!!"
+else
+	echo "Not Allowed ;)"
+fi

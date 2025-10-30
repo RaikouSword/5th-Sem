@@ -1,0 +1,9 @@
+echo "Enter a ch: "
+read ch
+case $ch in
+	[a-z]) echo "Lowercase alphabet";;
+	[A-Z]) echo "Uppercase alphabet";;
+	[0-9]) echo "Digit";;
+	?) echo "Special Character";;
+	*) echo "Entered more than one character";;
+esac

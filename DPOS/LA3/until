@@ -1,8 +1,5 @@
-
-
-    i=1
-
-    until [ $i -gt 5 ]
+i=1
+until [ $i -eq 6 ]
     do
         echo "$i"
         ((i++))

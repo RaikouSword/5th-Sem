@@ -1,0 +1,12 @@
+echo "Enter a day: "
+read day
+case $day in
+	Monday) echo "No class on Monday";;
+	Tuesday) echo "DOS class time is, 10:00-11:00 AM. RoomNo-110";;
+	Wednesday) echo "DOS class time is, 10:00-11:00 AM. RoomNo-110";;
+	Thursday) echo "DOS class time is, 02:00-04:00 PM. RoomNo-21";;
+	Friday) echo "No class on Friday";;
+	Saturday) echo "DOS class time is, 02:00-03:00 PM. RoomNo-110";;
+	Sunday) echo "It's Holiday";;
+	*) echo "Invalid data"
+esac

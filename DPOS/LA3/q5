@@ -1,0 +1,9 @@
+echo "Enter SP and CP: "
+read sp cp
+if [ $sp -gt $cp ]; then
+	echo "Total Profit: $(expr $sp - $cp)"
+elif [ $cp -gt $sp ]; then
+	echo "Total Loss: $(expr $cp - $sp)"
+else
+	echo "No profit or loss has been made."
+fi
