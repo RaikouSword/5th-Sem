@@ -1,0 +1,10 @@
+Enter hourly rate(Rs): 500
+Enter hours worked per week: 84
+
+--- Salary Details ---
+Basic Salary per Month: Rs. 80,000.00
+Overtime Salary per Month: Rs. 132,000.00
+Total Monthly Salary: Rs. 212,000.00
+Tax Deducted (on Basic Salary): Rs. 12,000.00
+Gross Salary (Basic + 20% Allowances - Tax): Rs. 84,000.00
+Income Category: High income

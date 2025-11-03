@@ -1,0 +1,28 @@
+Enter details for 3 employees:
+
+--- Employee 1 ---
+Enter employee name: Rajendra           
+Enter hourly rate (Rs.): 350
+Enter hours worked per week: 65
+
+--- Employee 2 ---
+Enter employee name: Subham
+Enter hourly rate (Rs.): 696
+Enter hours worked per week: 69
+
+--- Employee 3 ---
+Enter employee name: Surya
+Enter hourly rate (Rs.): 438
+Enter hours worked per week: 67
+
+
+================================================================================
+                             EMPLOYEE SALARY REPORT                             
+================================================================================
+Name                Basic Salary (Rs)   Gross Salary (Rs)   Tax (Rs)  Bracket        
+--------------------------------------------------------------------------------
+Rajendra            56,000.00           61,600.00           5,600.00  Middle income  
+Subham              111,360.00          111,360.00          22,272.00 High income    
+Surya               70,080.00           73,584.00           10,512.00 Middle income  
+================================================================================
+End of Report
